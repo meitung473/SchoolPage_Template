@@ -1,0 +1,29 @@
+@media (min-width: 768px) and (max-width: 991.98px)
+{
+  .custom-row
+  {
+    height: 25%;
+    
+  }
+  .custom-row p
+  {
+    padding-top: 2.5%;
+    text-align: center;
+    font-size: 1.15rem;
+    color:red;
+  }
+  .custom-container
+  {
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+    .custom-card
+    {
+    top: 40%;
+    height: 95%;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 17px 5px 7px rgba(0,0,0,0.13);
+    margin-bottom: 10%;
+    }
+
+}
