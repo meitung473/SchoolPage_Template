@@ -17,3 +17,10 @@ $(document).ready(function() {
     return false;
     });
 });
+// $('#fbtn').click(function (e) { 
+
+//     // $('#fbtn').css("display","none");
+//     // $('#fimg').attr('src','template/pexels-stanley-morales-1454360.jpg');
+//     e.preventDefault();
+    
+// });

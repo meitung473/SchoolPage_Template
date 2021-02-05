@@ -97,6 +97,7 @@ body {
 {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   background-color:#1B5299;
   height: 100%;
 }
@@ -155,7 +156,7 @@ body {
 
   padding-top: 10%;
   padding-bottom: 10%;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(template/pexels-cottonbro-4778621.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(/template/pexels-cottonbro-4778621.jpg);
   /* filter: blur(8px); */
   overflow: hidden;
   background-size: cover;
@@ -194,6 +195,14 @@ body {
   text-align: center;
 
 }
+#Newscontent
+{
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .custom-newcardupper p
 {
   margin: 0 auto;
@@ -209,39 +218,56 @@ body {
   width: 100%;
 }
 /* nav tab */
-.navbar-nav a:hover
+.dropdown-toggle
 {
-  background-color: #EAEBED;
+  
 }
-
-.nav-item :hover
+.dropdown-toggle:focus
 {
-  background-color: #009FB7;
+  color: black;
+  margin-bottom: 0;
 }
 .dropdown-menu
 {
   padding: 0;
   margin: 0;
   background-color: #009FB7 ;
-  border-radius:0px;
+  border-radius:  0 0 1em 1em;
 }
-
-
+.dropdown-menu .dropdown-item:last-child:hover
+{
+  color: black;
+  border-radius:  0 0 1em 1em;
+}
+.dropdown-menu .dropdown-item:focus
+{
+  color: black;
+  background-color:#CF5C36;  
+}
+.dropdown-menu .dropdown-item:last-child:focus
+{
+  border-radius:  0 0 1em 1em;
+}
 .navbar-toggler
 {
   border: none;
 }
-
+.nav-link:focus> span
+{
+  color:#EAEBED;
+}
 /* nav ul  */
 .custom-ul
 {
   margin: 0 ;
+  color:#EAEBED;
   padding-bottom:0px;
 }
-.navbar-nav>li:hover
+
+/* .navbar-nav li:hover
 {
   background-color: #009FB7;
-}
+} */
 .custom-searchbar
 {
   margin: 0 auto;
@@ -275,8 +301,42 @@ body {
 }
 /* page-content */
 /* /////////////////////////////////////// */
+.list-group-item
+{
+  border: none;
+}
+.list-item>a
+{
+  background-color: #EAEBED;
+}
+.list-group-item-action:active
+{
+  
+  background-color: #009FB7 !important;
+}
+.custom-list-title
+{
+  color:#1B5299;
+}
+.custom-list-title:focus
+{
+  color: #EAEBED;
+  background-color: #1B5299;
+}
+.list-group-item-action:hover
+{ 
+  color:#EAEBED;
+  
+  background-color: #009FB7;
+}
+.list-group-item-action:focus
+{
+  color:#EAEBED;
+  background-color: #CF5C36;
+}
 .custom-pagerow
 {
+  
   min-height: 35vh;
 }
 /* banner */
@@ -301,17 +361,18 @@ body {
   border: 2px solid  #1B5299;
 }
 
+
 @media (min-width: 1000px) and (max-width: 1439px)
 {
   .custom-row
   {
-    height: 30%;
+    max-height: 15%;
   }
 }
 @media (min-width: 1366px) 
 {
   .custom-row
   {
-    height: 30%;
+    max-height: 8%;
   }
 }

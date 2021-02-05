@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>School Title</title>
+  <title>NSYSU</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <div class="container-fluid   m-0">
       <!-- LOGO -->
       <a class="navbar-brand " href="index.html" >
-        <img src="template/schoollogo.png" class="navbar-brandimg" width="200px" alt="">
+        <img src="/template/schoollogo.png" class="navbar-brandimg" width="200px" alt="">
       </a>
       <!-- 小漢堡 -->
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,17 +35,15 @@
       </button>
       <!-- navbar 裡面的東西 -->
       <div class="collapse navbar-collapse  justify-content-center m-0 p-0" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto border custom-ul align-self-end"id="mytab"role="tablist">
-          <li class="nav-item dropdown">
+        <ul class="navbar-nav ml-auto  custom-ul align-self-end"id="mytab"role="tablist">
+          <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle border-0" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="tab">
-              About
+              <span>About</span> 
             </a>
             <div class="dropdown-menu dropdown-menu-left border-0" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="About1.html">About1</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+              <a class="dropdown-item" href="About/About1.html">Words From The President</a>
+              <a class="dropdown-item" href="About/About2.html">Introduction</a>
+              <a class="dropdown-item" href="About/About3.html">NSYSU Facts & Figures</a>
             </div>
           </li>
           <li class="nav-item dropdown border-0">
@@ -53,12 +51,12 @@
               Organization
             </a>
             <div class="dropdown-menu dropdown-menu-left border-0" aria-labelledby="navbarDropdownPages">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+              <a class="dropdown-item" href="Organization/Organization1.html">Organization1</a>
+              <a class="dropdown-item" href="Organization/Organization2.html">Organization2</a>
             </div>
           </li>
           <li class="nav-item border-0">
-            <a class="nav-link border-0" href="services.html">NEWS</a>
+            <a class="nav-link border-0" href="../NEWS.html">NEWS</a>
             </a>
           </li>
           <li class="nav-item dropdown border-0">
@@ -66,8 +64,8 @@
               Contact Us
             </a>
             <div class="dropdown-menu dropdown-menu-left border-0" aria-labelledby="navbarDropdownPages">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="Contact-map.html">School Information</a>
+              <a class="dropdown-item" href="Contact/Get Intouch With Us.html">Send us a Message</a>
+              <a class="dropdown-item" href="Contact/Contact-map.html">Traffic Information</a>
             </div>
           </li>
           <!-- 搜尋列 -->
@@ -100,21 +98,21 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('template/pexels-stanley-morales-1454360.jpg')">
+        <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url('template/pexels-stanley-morales-1454360.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>COOL</h3>
-            <p>This is a description for the first slide.</p>
+            <h3>Enjoy The Campus Life !</h3>
+            <p>ranks first for registration rate of PhD programs and rate growth among Taiwanese research universities</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('template/pexels-armin-rimoldi-5554269.jpg')">
+        <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url('template/pexels-armin-rimoldi-5554269.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h3>Second Slide</h3>
             <p>This is a description for the second slide.</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('template/pexels-helena-lopes-745045.jpg')">
+        <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url('template/pexels-helena-lopes-745045.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h3>Third Slide</h3>
             <p>This is a description for the third slide.</p>
@@ -138,9 +136,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 custom-row" >
-        <div class="col-12 custom-margin" >
            <p class="text-sm-center text-white font-weight-bold">Motivated achievers perform, learn, excel</p>
-        </div>
+        
       </div>
     </div>
   </div>  
@@ -150,29 +147,30 @@
       <!-- Feature card-->
       <div class="col-md-4">
         <div class="card custom-card p-3 shadow  mb-5">
-          <img class="card-img" src="template/pexels-armin-rimoldi-5554269.jpg" alt="Card image">
+          <img class="card-img" src="template/creativity-university-students.jpg" id="fimg"alt="Card image">
           <div class="card-img-overlay">
-            <p class="card-text">I'm text that has a background image!</p>
+            <!-- <p class="card-text">I'm text that has a background image!</p> -->
           </div>
-          <button type="button" class="btn  btn-lg custom-btn">Large button</button>
+          <button type="button"class="btn  btn-lg custom-btn" id="fbtn">
+           <b>Creativity</b> </button>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card custom-card p-3 shadow mb-5">
-          <img class="card-img" src="template/pexels-armin-rimoldi-5554269.jpg" alt="Card image">
+          <img class="card-img" src="/template/pexels-armin-rimoldi-5554269.jpg" alt="Card image">
           <div class="card-img-overlay">
-            <p class="card-text">I'm text that has a background image!</p>
+            <!-- <p class="card-text">I'm text that has a background image!</p> -->
           </div>
-          <button type="button" class="btn  btn-lg custom-btn">Large button</button>
+          <button type="button" class="btn  btn-lg custom-btn"id="sbtn"><b>Ambition</b> </button>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card custom-card p-3 shadow mb-5 ">
-          <img class="card-img" src="template/pexels-armin-rimoldi-5554269.jpg" alt="Card image">
+          <img class="card-img" src="/template/pexels-armin-rimoldi-5554269.jpg" alt="Card image">
           <div class="card-img-overlay">
-            <p class="card-text">I'm text that has a background image!</p>
+            <!-- <p class="card-text">I'm text that has a background image!</p> -->
           </div>
-          <button type="button" class="btn  btn-lg custom-btn">Large button</button>
+          <button type="button" class="btn  btn-lg custom-btn"id="tbtn"><b>Unlimited</b></button>
         </div>
       </div>
     </div>
@@ -185,22 +183,25 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-              <h2>Modern Business Features</h2>
+              <h2>National Sun Yat-sen University</h2>
               <hr class="custom-hr">
               <p>The Modern Business template by Start Bootstrap includes:</p>
               <ul>
                 <li>
-                  <strong>Bootstrap v4</strong>
+                  <strong>6 COLLEGES</strong>
                 </li>
-                <li>jQuery</li>
-                <li>Font Awesome</li>
-                <li>Working contact form with validation</li>
-                <li>Unstyled page elements for easy customization</li>
+                <li> 21 Undergraduate Programs</li>
+                <li>41Master Programs</li>
+                <li>27 Doctoral Programs</li>
               </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+              <p>
+                NSYSU was established in 1980 by the Ministry of Education as a leading comprehensive higher
+                education institution in southern Taiwan. Along the years, NSYSU has grown to become one of
+                the best universities in the country.
+              </p>
             </div>   
             <div class="col-lg-6">
-            <img src="template/pexels-helena-lopes-745045.jpg" class="img-fluid" alt="Responsive image">
+            <img src="template/schoolimg01.jpg" class="img-fluid" alt="Responsive image">
             </div>
           </div>
       </div>
@@ -220,18 +221,25 @@
         <div class="row ">
             <div class="col-md-6 col-sm-12 ">
               <div class="card-img">
-                <img class="img-thumbnail" src="template/pexels-armin-rimoldi-5554269.jpg" alt="Thumbnail image">
-                <div class="card-img-overlay d-flex justify-content-center">
+                <img class="img-thumbnail" src="https://www.nsysu.edu.tw/var/file/0/1000/pictures/549/m/mcen1200x1200_large154281_830962338021.jpg" alt="Thumbnail image">
+                <div class="card-img-overlay d-flex justify-content-center ">
                   <!-- 新聞替換url -->
-                  <a href="#!" class="btn btn-primary align-self-end">Learn More</a>
+                  <a href="#!" class="btn align-self-end " style="background-color: #1B5299;color:white;">Learn More</a>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="card-body d-block">
-                  <h4 class="card-title" id="Newstitle">How will 'chipageddon' affect you?</h4>
+                  <a href="#" style="color:#1B5299;">
+                    <h4 class="card-title text-truncate" id="Newstitle">NSYSU and R.O.C. Air Force Academy sign strategic alliance agreement</h4>
+                  </a>
                   <hr class="custom-hr">
-                  <p class="card-text" id="Newscontent">f32f32f23f23</p>
+                  <p class="card-text mh-10 " id="Newscontent">
+                    National Sun Yat-sen University tied a strategic alliance with R.O.C. Air Force Academy. In the future, NSYSU will launch in-service programs for the professional development of the Academy’s personnel. The Academy will provide guidance to NSYSU students who want to join the Reserve Officers' Training Corps and take the exam for Regular Flight Officer Class after graduation so as to encourage more talented people to join the military and improve the quality of national defense manpower.
+                    <br>
+                      National Sun Yat-sen University tied a strategic alliance with R.O.C. Air Force Academy. In the future, NSYSU will launch in-service programs for the professional development of the Academy’s personnel. The Academy will provide guidance to NSYSU students who want to join the Reserve Officers' Training Corps and take the exam for Regular Flight Officer Class after graduation so as to encourage more talented people to join the military and improve the quality of national defense manpower.
+                    
+                  </p>
                   <div class="btn-group custom-btn-group border-0 align-self-end"  role="group" aria-label="Basic example">
                     <button type="button" class="btn p-0">
                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#009FB7" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
@@ -245,8 +253,8 @@
                     </button>
                   </div>
                   <div class="btn-group custom-btn-group float-right border-0"  role="group" aria-label="Basic example">
-                    <a href="#" type="button" style="text-decoration: none;" class="d-flex btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#009FB7" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                    <a href="NEWS.html" type="button" style="text-decoration: none;" class="d-flex btn p-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#CF5C36" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
                       </svg>
                       <p class="text-center">More News</p> 
@@ -285,7 +293,7 @@
         <!-- LOGO 與聯絡資訊 -->
           <div class="col-lg-3 col-12 align-self-center">
             <div class="row justify-content-center ">
-              <img  class=" align-items-center"src="template/LOGOB.svg" alt="" width="200px">
+              <img  class=" align-items-center"src="/template/LOGOB.svg" alt="" width="200px">
             </div>
           </div>
           <div class="col-lg-7 col-12">
@@ -318,7 +326,7 @@
           </div>
 
         </div>
-        <div class="col-2 d-flex">
+        <div class="col-2 d-flex align-self-center">
             <div class="row justify-content-center">
               <br>
               <div class="btn-group  btn-group-sm my-2 align-items-center " role="group" aria-label="Basic example">
