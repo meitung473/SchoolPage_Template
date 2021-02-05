@@ -352,7 +352,7 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(template/pexels-helena-lopes-745045.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(/template/pexels-helena-lopes-745045.jpg);
 }
 
 .custom-btn-group
