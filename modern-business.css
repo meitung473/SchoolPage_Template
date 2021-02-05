@@ -1,0 +1,375 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+.scroll {
+  color: #fff;
+  margin-top: 100px
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: hsla(5, 76%, 62%, .8);
+}
+
+.js .cd-top--fade-out {
+  opacity: .5;
+}
+
+.js .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.js .cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s, background-color .3s;
+}
+
+.cd-top {
+  position: fixed;
+  bottom: 20px;
+  bottom: var(--cd-back-to-top-margin);
+  right: 20px;
+  right: var(--cd-back-to-top-margin);
+  display: inline-block;
+  height: 40px;
+  height: var(--cd-back-to-top-size);
+  width: 40px;
+  width: var(--cd-back-to-top-size);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+  background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+  background-color: hsla(5, 76%, 62%, .8);
+  background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+/* navbar */
+.custom-navbar
+{
+  /* padding-top: 2%; */
+  /* padding-bottom: 0 !important; */
+  width: 100%;
+  background-color: #1B5299;
+}
+.navbar-toggler:active
+{
+  border: none;
+}
+.shrink 
+{
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;  
+  -o-transition:padding 0.2s linear;         
+  transition:padding 0.2s linear; 
+}
+.shrinkitem
+{
+  height: 50%;
+ 
+  transition:height 0.2s linear;
+}
+
+.custom-row
+{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#1B5299;
+  height: 100%;
+}
+.custom-row p
+{
+  margin: 0 auto;
+  padding-top: 2.5%;
+  position: relative;
+  font-size: 1.6rem;
+}
+.custom-card
+{
+  top: 40%;
+  /* border:solid salmon 3px; */
+  /* margin-bottom: 50%; */
+  align-items: center;
+  height: 95%;
+  border-radius: 0 0 30px 30px;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+  margin-bottom: 10%;
+}
+
+.custom-container
+{
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 5%;
+  background-color: #EAEBED;
+  padding: 5%;
+
+}
+.custom-btn
+{
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+  min-width: 85%;
+  bottom: 0%;
+  background-color: #1B5299;
+  color:#EAEBED;
+}
+.custom-newscard
+{
+  /* margin-bottom: 50%; */
+  align-items: center;
+  height: 100%;
+  border-radius: 0 0 30px 30px;
+}
+.custom-newscard img
+{
+  min-height: 80%;
+}
+.custom-CTA
+{
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(/template/pexels-cottonbro-4778621.jpg);
+  /* filter: blur(8px); */
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  
+}
+.custom-CTAbtn
+{
+  filter:unset;
+  background-color: #CF5C36;
+
+}
+.custom-CTAbtn:hover
+{
+  filter:unset;
+  background-color: #EAEBED;
+  transition: 0.2s;
+  transform: scale(1.05,1.05);
+  color:#009FB7;
+}
+
+.custom-footer
+{
+  
+  background-color: #1B5299;
+}
+/* 平行排 */
+.card-horizontal
+{
+  display: flex;
+}
+.custom-newcardupper
+{
+  background-color: #1B5299;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+
+}
+#Newscontent
+{
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.custom-newcardupper p
+{
+  margin: 0 auto;
+  height: 100%;
+  font-size: 1.6rem;
+  color:#EAEBED;
+}
+.custom-collapse
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+/* nav tab */
+
+.dropdown-toggle:focus
+{
+  color: black;
+  margin-bottom: 0;
+}
+.dropdown-menu
+{
+  padding: 0;
+  margin: 0;
+  background-color: #009FB7 ;
+  border-radius:  0 0 1em 1em;
+}
+.dropdown-menu .dropdown-item:last-child:hover
+{
+  color: black;
+  border-radius:  0 0 1em 1em;
+}
+.dropdown-menu .dropdown-item:focus
+{
+  color: black;
+  background-color:#CF5C36;  
+}
+.dropdown-menu .dropdown-item:last-child:focus
+{
+  border-radius:  0 0 1em 1em;
+}
+.navbar-toggler
+{
+  border: none;
+}
+.nav-link:focus> span
+{
+  color:#EAEBED;
+}
+/* nav ul  */
+.custom-ul
+{
+  margin: 0 ;
+  color:#EAEBED;
+  padding-bottom:0px;
+}
+
+/* .navbar-nav li:hover
+{
+  background-color: #009FB7;
+} */
+.custom-searchbar
+{
+  margin: 0 auto;
+  border: none;
+  background-color: #009FB7;
+  border-radius: 30px;
+  max-height: 30px;
+  opacity: 0.5;
+  color: #EAEBED;
+  width: 75%;
+}
+.custom-searchbarbtn
+{
+  margin: 0 auto;
+  max-height: 30px;
+  margin-bottom: 5%;
+}
+.custom-searchbarbtn svg
+{
+  display: block;
+  margin: 0 auto;
+  color:#EAEBED
+}
+.custom-hr
+{
+
+  background-color: #1B5299;
+  border: 2px solid  #1B5299;
+  width: 10%;
+  margin-left: 0;
+}
+/* page-content */
+/* /////////////////////////////////////// */
+.list-group-item
+{
+  border: none;
+}
+.list-item>a
+{
+  background-color: #EAEBED;
+}
+.list-group-item-action:active
+{
+  
+  background-color: #009FB7 !important;
+}
+.custom-list-title
+{
+  color:#1B5299;
+}
+.custom-list-title:focus
+{
+  color: #EAEBED;
+  background-color: #1B5299;
+}
+.list-group-item-action:hover
+{ 
+  color:#EAEBED;
+  
+  background-color: #009FB7;
+}
+.list-group-item-action:focus
+{
+  color:#EAEBED;
+  background-color: #CF5C36;
+}
+.custom-pagerow
+{
+  
+  min-height: 35vh;
+}
+/* banner */
+.custom-pagerow .card-text
+{
+  margin-top:20vh;
+  vertical-align: bottom;
+}
+.custom-page-img
+{
+  
+  min-width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(../template/pexels-helena-lopes-745045.jpg);
+}
+
+.custom-btn-group
+{
+  
+  border: 2px solid  #1B5299;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1439px)
+{
+  .custom-row
+  {
+    max-height: 15%;
+  }
+}
+@media (min-width: 1366px) 
+{
+  .custom-row
+  {
+    max-height: 8%;
+  }
+}
