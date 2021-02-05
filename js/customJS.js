@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('#toTopBtn').fadeOut();
     // gototop
     $(window).scroll(function() {
     if ($(this).scrollTop() > 20) {
