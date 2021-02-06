@@ -296,6 +296,11 @@ body {
   width: 10%;
   margin-left: 0;
 }
+.learnmore:hover
+{
+  transform:  scale(1.05,1.05);
+  transition:  0.2s;
+}
 /* page-content */
 /* /////////////////////////////////////// */
 .list-group-item
