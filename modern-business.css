@@ -301,7 +301,7 @@ body {
   background-color: #1B5299;
   color:white;
 }
-.learnmore a:hover
+.learnmore :hover
 {
   background: #009FB7;
   transform:  scale(1.05,1.05);
