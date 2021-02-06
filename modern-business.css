@@ -296,6 +296,11 @@ body {
   width: 10%;
   margin-left: 0;
 }
+.learnmore
+{
+  background-color: #1B5299;
+  color:white;
+}
 .learnmore a:hover
 {
   background: #009FB7;
