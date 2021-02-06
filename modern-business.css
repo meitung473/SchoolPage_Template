@@ -313,11 +313,7 @@ body {
 {
   border: none;
 }
-.list-group-item >.active>a
-{
-  border: 1px solid red;
-  color:blue;
-}
+
 .list-item>a
 {
   background-color: #EAEBED;
