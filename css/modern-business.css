@@ -98,8 +98,9 @@ body {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  background-color:#1B5299;
-  max-height: 200%;
+  
+  max-height: 50vh;
+  
   
 }
 .custom-row p
