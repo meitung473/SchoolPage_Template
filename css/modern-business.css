@@ -3,7 +3,10 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
-
+body
+{
+  background-color: #f1f1f1;
+}
 .scroll {
   color: #fff;
   margin-top: 100px
