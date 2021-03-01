@@ -204,7 +204,7 @@ body
   overflow: hidden;
   text-overflow: ellipsis;
   color : black;
-  font-size: 0.8em;
+  font-size: 0.1rem;
 }
 .custom-newcardupper p
 {
