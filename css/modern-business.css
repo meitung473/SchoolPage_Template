@@ -204,6 +204,7 @@ body
   overflow: hidden;
   text-overflow: ellipsis;
   color : black;
+  /* news words fontsize */
   font-size: 0.3rem;
 }
 .custom-newcardupper p
