@@ -75,7 +75,7 @@ img[title="Print my calendar (shows preview)"],
    }
    .agenda-more:hover,.agenda-more:active, a:hover, a:active,.agenda-more:hover,.agenda-more:active, a:hover, a:active {
     background-color:transparent;
-    color:green;
+    color:#808080;
     cursor:pointer;
     text-decoration:underline;
     white-space:nowrap
