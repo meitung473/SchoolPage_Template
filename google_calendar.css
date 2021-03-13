@@ -58,3 +58,25 @@ img[title="Print my calendar (shows preview)"],
 
 .mv-event-container
 { top:30px;}
+
+.agenda-more, a {
+    background-color:transparent;
+    color:#000000;
+    cursor:pointer;
+    text-decoration:underline;
+    white-space:nowrap
+   }
+   .agenda-more:visited, a:visited {
+    background-color:transparent;
+    color:#000000;
+    cursor:pointer;
+    text-decoration:underline;
+    white-space:nowrap
+   }
+   .agenda-more:hover,.agenda-more:active, a:hover, a:active,.agenda-more:hover,.agenda-more:active, a:hover, a:active {
+    background-color:transparent;
+    color:green;
+    cursor:pointer;
+    text-decoration:underline;
+    white-space:nowrap
+   }
