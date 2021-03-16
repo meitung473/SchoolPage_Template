@@ -1,5 +1,5 @@
 <?php
-$your_google_calendar="https://www.google.com/calendar/embed?src=usa__en@holiday.calendar.google.com&gsessionid=OK";
+$your_google_calendar="https://calendar.google.com/calendar/embed?src=a8870506%40gmail.com&ctz=Asia%2FTaipei";
 $url= parse_url($your_google_calendar);
 $google_domain = $url['scheme'].'://'.$url['host'].dirname($url['path']).'/';
 // Load and parse Google's raw calendar
