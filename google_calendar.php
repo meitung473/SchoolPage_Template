@@ -1,6 +1,6 @@
 <?php
 $newstyle='google_calendar.css';
-$url="URL TO CALENDAR";
+$url="https://calendar.google.com/calendar/u/0/embed?src=a8870506@gmail.com&ctz=Asia/Taipei;
 $ch=curl_init();
 curl_setopt($ch,CURLOPT_URL,$url);
 curl_setopt($ch,CURLOPT_HEADER,0);
