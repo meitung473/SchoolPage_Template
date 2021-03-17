@@ -1,25 +1,21 @@
 <?php
-$calendarpath="https://calendar.google.com/calendar/embed?src=a8870506%40gmail.com&ctz=Asia%2FTaipei";
 
-//Custom css path
-$newcss="google_calendar.css";
-
-//Iframe contants
-$contents = file_get_contents($calendarpath);
-
-// add secure Google address to root relative links
-$contents = str_replace('<link type="text/css" rel="stylesheet" href="//www.google.com/calendar/', '<link type="text/css" rel="stylesheet" href="https://www.google.com/calendar/', $contents );
-$contents = str_replace('<script type="text/javascript" src="//www.google.com/calendar/', '<script type="text/javascript" src="https://www.google.com/calendar/' , $contents );
-
-//Inject custom css to iframe
-$contents = str_replace('<script>function _onload()', '<script>function _onload()', $contents );
-
-//Set up default view.
-$contents = str_replace('"view":"month"', '"view":"week"', $contents);
-
-//Hide calendar menu
-$contents = str_replace('"showCalendarMenu":true', '"showCalendarMenu":false', $contents);
-
-//Echo calendar
-echo $contents;
+$newstyle='google_calendar.css';
+$url="https://calendar.google.com/calendar/embed?src=a8870506%40gmail.com&ctz=Asia%2FTaipei";
+$ch=curl_init();
+header("Content-Type:text/html; charset=utf-8");
+curl_setopt($ch,CURLOPT_URL,$url);
+curl_setopt($ch,CURLOPT_HEADER,0);
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,0);
+$buffer=curl_exec($ch);
+curl_close($ch);
+$search = '/(<link.*>)/';
+$replacement = '<link rel="stylesheet" type="text/css" href="' . $newstyle . '" />';
+$buffer = preg_replace($search, $replacement, $buffer);
+$buffer=str_replace('/calendar/_','https://calendar.google.com/calendar/_',$buffer);
+$buffer=str_replace('<script>function _onload()','<script>function _onload()',$buffer);
+$buffer=str_replace('<script type="text/javascript" src="//www.google.com/calendar/','<script type="text/javascript" src="https://www.google.com/calendar/',$buffer);
+$buffer=str_replace('"baseUrl":"/"','"baseUrl":"https://www.google.com/"',$buffer);
+echo $buffer;
 ?>
