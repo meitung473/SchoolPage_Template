@@ -6,7 +6,8 @@
     var defaults = $.extend({
         calendarId: 'zh.taiwan#holiday@group.v.calendar.google.com',
         apiKey: 'AIzaSyDwdytMRbEtRJ_tWpHH7eO0zhwJ4-bGedM',
-        dateFormat: 'LongDate',
+        dateFormat: 'Month',
+        dayformat:'Day',
         errorMsg: 'No events in calendar',
         maxEvents: 4,
         futureEventsOnly: true,
@@ -38,9 +39,12 @@
 					var location = item.location;
          
           //時間 
-					s ='<div class="eventdate">'+ formatDate(eventdate, defaults.dateFormat.trim()) +'</div>';
+        
+					s='<div class="eventdate col-4  text-center px-2">'+ formatDate(eventdate, defaults.dateFormat.trim())+
+          '<div class="eventday text-center ">'+formatDate(eventdate, defaults.dayformat.trim())+'</div>'
+          +'</div>';
 					// 活動
-           s +='<div class="eventtitle">' + summary + '</div>';
+          s +='<div class="eventtitle col-8 text-center align-self-center">' + summary + '</div>';
           // 地點
           if(location) {
 						s +='<div class="location">At :' + location + '</div>';
@@ -49,7 +53,7 @@
 					if(description) {
 						s +='<div class="description">'+ description +'</div>';
 					}
-					$($div).append('<li>' + s + '</li>');
+					$($div).append('<li class="row col-md-3 col-lg-12">' + s + '</li>');
         });
       },
       error: function(error) {
@@ -132,11 +136,17 @@
             month] + ' ' + dayNum;
           break;
         case 'MonthDay':
-          fd = calendar.months.full[month] + ' ' + dayNum;
+          fd = calendar.months.short[month] +'.'+ ' ' + dayNum;
           break;
         case 'YearMonth':
           fd = calendar.months.full[month] + ' ' + year;
           break;
+        case 'Month':
+            fd = calendar.months.short[month]+'.';
+            break;
+        case 'Day':
+            fd =dayNum;
+            break;
         default:
           fd = calendar.days.full[d.getDay()] + ' ' + calendar.months.short[
             month] + ' ' + dayNum + ', ' + year + ' ' + time;

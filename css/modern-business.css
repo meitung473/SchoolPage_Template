@@ -363,6 +363,28 @@ body
 }
 
 
+/* 日歷樣式 */
+#eventlist
+{
+  
+}
+.eventdate
+{
+  
+  background-color: #1B5299;
+  font-size: large;
+  color:#EAEBED;
+}
+.eventday
+{
+  
+  font-size: medium;
+}
+.eventtitle
+{
+  vertical-align:middle;
+  
+}
 @media (min-width: 1000px) and (max-width: 1439px)
 {
   .custom-row
