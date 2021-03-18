@@ -4,8 +4,8 @@
     var $div = $(this);
 
     var defaults = $.extend({
-        calendarId: 'en.usa#holiday@group.v.calendar.google.com',
-        apiKey: 'Public_API_Key',
+        calendarId: 'a8870506@gmail.com',
+        apiKey: 'AIzaSyDwdytMRbEtRJ_tWpHH7eO0zhwJ4-bGedM',
         dateFormat: 'LongDate',
         errorMsg: 'No events in calendar',
         maxEvents: 4,
@@ -39,7 +39,7 @@
 					s ='<div class="eventtitle">' + summary + '</div>';
 					s +='<div class="eventdate"> When: '+ formatDate(eventdate, defaults.dateFormat.trim()) +'</div>';
 					if(location) {
-						s +='<div class="location">Where: ' + location + '</div>';
+						s +='<div class="location">At :' + location + '</div>';
 					}
 					if(description) {
 						s +='<div class="description">'+ description +'</div>';
