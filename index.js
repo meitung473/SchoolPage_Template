@@ -15,7 +15,7 @@
       options);
 
     var s = '';
-    var feedUrl = 'http://www.googleapis.com/calendar/v3/calendars/' +
+    var feedUrl = 'https://www.googleapis.com/calendar/v3/calendars/' +
       encodeURIComponent(defaults.calendarId.trim()) +'/events?key=' + defaults.apiKey +
       '&orderBy=startTime&singleEvents=true';
       if(defaults.futureEventsOnly) {
