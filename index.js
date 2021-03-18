@@ -36,11 +36,12 @@
           var summary = item.summary || '';
 					var description = item.description;
 					var location = item.location;
-          // 活動
-					s ='<div class="eventtitle">' + summary + '</div>';
+         
           //時間 
-					s +='<div class="eventdate">'+ formatDate(eventdate, defaults.dateFormat.trim()) +'</div>';
-					// 地點
+					s ='<div class="eventdate">'+ formatDate(eventdate, defaults.dateFormat.trim()) +'</div>';
+					// 活動
+           s +='<div class="eventtitle">' + summary + '</div>';
+          // 地點
           if(location) {
 						s +='<div class="location">At :' + location + '</div>';
 					}
