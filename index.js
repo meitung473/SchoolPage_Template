@@ -4,8 +4,8 @@
     var $div = $(this);
 
     var defaults = $.extend({
-        calendarId: 'en.usa#holiday@group.v.calendar.google.com',
-        apiKey: 'Public_API_Key',
+        calendarId: 'a8870506@gmail.com',
+        apiKey: 'AIzaSyDwdytMRbEtRJ_tWpHH7eO0zhwJ4-bGedM',
         dateFormat: 'LongDate',
         errorMsg: 'No events in calendar',
         maxEvents: 4,
