@@ -4,7 +4,7 @@
     var $div = $(this);
 
     var defaults = $.extend({
-        calendarId: '243313701261-kbuhn4ouaoc3c96u57iof6ma6h2mchhk.apps.googleusercontent.com',
+        calendarId: 'a8870506@gmail.com',
         apiKey: 'AIzaSyDwdytMRbEtRJ_tWpHH7eO0zhwJ4-bGedM',
         dateFormat: 'LongDate',
         errorMsg: 'No events in calendar',
