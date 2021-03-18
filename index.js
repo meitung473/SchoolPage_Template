@@ -4,8 +4,8 @@
     var $div = $(this);
 
     var defaults = $.extend({
-        calendarId: 'a8870506@gmail.com',
-        apiKey: 'AIzaSyDwdytMRbEtRJ_tWpHH7eO0zhwJ4-bGedM',
+        calendarId: 'en.usa#holiday@group.v.calendar.google.com',
+        apiKey: 'Public_API_Key',
         dateFormat: 'LongDate',
         errorMsg: 'No events in calendar',
         maxEvents: 4,
@@ -36,11 +36,15 @@
           var summary = item.summary || '';
 					var description = item.description;
 					var location = item.location;
+          // 活動
 					s ='<div class="eventtitle">' + summary + '</div>';
-					s +='<div class="eventdate"> When: '+ formatDate(eventdate, defaults.dateFormat.trim()) +'</div>';
-					if(location) {
+          //時間 
+					s +='<div class="eventdate">'+ formatDate(eventdate, defaults.dateFormat.trim()) +'</div>';
+					// 地點
+          if(location) {
 						s +='<div class="location">At :' + location + '</div>';
 					}
+          //描述
 					if(description) {
 						s +='<div class="description">'+ description +'</div>';
 					}
