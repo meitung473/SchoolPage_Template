@@ -375,7 +375,7 @@ body {
   filter: grayscale(100%) sepia(100%);
   
 }
-}
+
 @media (min-width: 1000px) and (max-width: 1439px)
 {
   .custom-row
