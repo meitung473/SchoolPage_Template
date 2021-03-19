@@ -295,8 +295,8 @@ body
 .custom-hr
 {
 
-  background-color: #1B5299;
-  border: 2px solid  #1B5299;
+  background-color: #009FB7;
+  border: 2px solid  #009FB7;
   width: 10%;
   margin-left: 0;
 }
@@ -362,29 +362,60 @@ body
   border: 2px solid  #1B5299;
 }
 
-
-/* 日歷樣式 */
-#eventlist
+.bi-cloud-arrow-down-fill
 {
-  
+  color:#CF5C36;
 }
+/* 日歷樣式 */
+
 .eventdate
 {
   
   background-color: #1B5299;
-  font-size: large;
+  font-size: small;
   color:#EAEBED;
 }
 .eventday
 {
-  
-  font-size: medium;
+  text-align: center;
 }
 .eventtitle
 {
+
   vertical-align:middle;
-  
+  font-size: small;
 }
+.canlendar-ul
+{
+  
+ 
+}
+.canlendar-li
+{
+  
+  letter-spacing: normal;
+ 
+}
+.custom-schoolinfoli
+{
+ text-align: center;
+}
+.custom-schoolinfoli .col-3 
+{
+  background-color: #1B5299;
+  color: #EAEBED;
+  border-bottom: 0.5px solid #EAEBED;
+}
+.custom-schoolinfoli .col-9
+{
+  border-bottom: 0.5px solid grey;
+}
+.custom-schoolinfoli .col-9 ul li
+{
+  background-color: transparent;
+ 
+}
+
 @media (min-width: 1000px) and (max-width: 1439px)
 {
   .custom-row
@@ -399,3 +430,9 @@ body
     max-height: 8%;
   }
 }
+.list-group-item:active
+{
+  background-color: red;
+}
+
+

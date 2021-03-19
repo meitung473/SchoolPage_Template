@@ -4,7 +4,7 @@
     var $div = $(this);
 
     var defaults = $.extend({
-        calendarId: 'zh.taiwan#holiday@group.v.calendar.google.com',
+        calendarId: 'gm.fhjh.tp.edu.tw_frsimf9jh3rkhjstt7hjdt1dc8@group.calendar.google.com',
         apiKey: 'AIzaSyDwdytMRbEtRJ_tWpHH7eO0zhwJ4-bGedM',
         dateFormat: 'Month',
         dayformat:'Day',
@@ -41,7 +41,7 @@
           //時間 
         
 					s='<div class="eventdate col-4  text-center px-2">'+ formatDate(eventdate, defaults.dateFormat.trim())+
-          '<div class="eventday text-center ">'+formatDate(eventdate, defaults.dayformat.trim())+'</div>'
+          '<div class="eventday text-center h4">'+formatDate(eventdate, defaults.dayformat.trim())+'</div>'
           +'</div>';
 					// 活動
           s +='<div class="eventtitle col-8 text-center align-self-center">' + summary + '</div>';
@@ -53,7 +53,7 @@
 					if(description) {
 						s +='<div class="description">'+ description +'</div>';
 					}
-					$($div).append('<li class="row col-md-3 col-lg-12">' + s + '</li>');
+					$($div).append('<li class="row col-md-3 col-lg-12 canlendar-li justify-content-center shadow-sm bg-light rounded">' + s + '</li>');
         });
       },
       error: function(error) {
@@ -142,7 +142,7 @@
           fd = calendar.months.full[month] + ' ' + year;
           break;
         case 'Month':
-            fd = calendar.months.short[month]+'.';
+            fd = calendar.days.short[d.getDay()]+'．'+calendar.months.short[month];
             break;
         case 'Day':
             fd =dayNum;
