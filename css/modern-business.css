@@ -436,4 +436,13 @@ body
   color: #EAEBED;
   background-color: #1B5299;
 }
+.custom-list-title[aria-expanded="true"]
+{
+  background: #1B5299;
+  color:#EAEBED;
+}
+.custom-list-title[aria-expanded="fasle"]
+{
+  background: #EAEBED;
 
+}
