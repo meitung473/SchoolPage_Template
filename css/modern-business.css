@@ -18,7 +18,9 @@ body
   right: 39px;
   z-index: 98;
   padding: 21px;
-  background-color: hsla(5, 76%, 62%, .8);
+  border-radius: 5px;
+  background-color: #CF5C36;
+  opacity: 0.8;
 }
 
 .js .cd-top--fade-out {
@@ -368,6 +370,22 @@ body
   
 }
 
+/* facebook effect */
+.bi-facebook,.bi-instagram,.bi-youtube
+{
+  position: relative;
+  font-size: 2em;
+  color: #009FB7;
+  top:0px;
+  transition: 0.3s;
+}
+a:hover .bi-facebook,a:hover .bi-instagram,a:hover .bi-youtube
+{
+  position: relative;
+  top:-5px;
+  transition: 0.3s;
+  color: #FFFFFF;
+}
 
 .custom-hr
 {
