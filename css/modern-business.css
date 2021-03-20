@@ -444,6 +444,11 @@ body
 
 }
 /* 旁邊的選單 */
+.custom-list-title.disabled
+{
+  background-color: #1B5299;
+  color: #EAEBED;
+}
 .custom-list-title.active
 {
   background-color: #1B5299;
