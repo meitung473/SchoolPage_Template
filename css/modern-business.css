@@ -430,10 +430,7 @@ body
     max-height: 8%;
   }
 }
-.list-group-item:active
-{
-  background-color: red;
-}
+
 #sendMessageButton
 {
   color: #EAEBED;

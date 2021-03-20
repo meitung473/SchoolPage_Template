@@ -58,7 +58,7 @@
             </div>
           </li>
           <li class="nav-item border-0">
-            <a class="nav-link border-0" href="contact.html">Contact</a>
+            <a class="nav-link border-0 active" href="contact.html">Contact</a>
           </li>
         
           <!-- 搜尋列 -->
@@ -120,7 +120,7 @@
             <a href="Organization/Organization2.html" class="list-group-item list-group-item-action list-item border-top">Organization2</a>
           </div>
 
-          <a href="#" class="list-group-item h6 custom-list-title border-top m-0">Contact</a>
+          <a href="#" class="list-group-item h6 custom-list-title border-top m-0 active">Contact</a>
 
 
         </div>
@@ -135,7 +135,29 @@
         </ol>
         
         <div class="row">
-            <div class="col-12">
+          
+            <!-- Map Column -->
+            <div class="col-lg-4">
+               <p class="h4 my-3"> <span class="custom-hr mx-2 "></span>Contact Us</p>
+                <ul class="col-12 list-unstyled">
+                  <li>Tel：07-123-456</li>
+                  <li>Fax：07-123-456</li>
+                  <li>Email：nsysu@mail.nsysu.edu.tw</li>
+                  <li>Service：Mon.-Fri. 9:00-17:00</li>
+                </ul>
+              </div>
+              <div class="col-lg-8 mb-4 ">
+                <div class="embed-responsive embed-responsive-4by3">
+              <!-- Embedded Google Map -->
+                <iframe 
+                    frameborder="0" 
+                    style="border:0" 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDcqchIJvZ4wlhm2U0PWCak-8-wlY_Z7-0&q=國立中山大學" 
+                    allowfullscreen>
+                    </iframe>              
+                </div>
+            </div>
+              <div class="col-12">
                 <p>
                   <p class="h4 my-3"> <span class="custom-hr mx-2 "></span>School location</p>
                   <p class="h6 col-12">How to get to NSYSU</p>
@@ -156,27 +178,7 @@
                 </ul>
 
             </div>
-            <!-- Map Column -->
-            <div class="col-lg-4">
-               <p class="h4 my-3"> <span class="custom-hr mx-2 "></span>Contact Us</p>
-                <ul class="col-12 list-unstyled">
-                  <li>Tel：07-123-456</li>
-                  <li>Fax：07-123-456</li>
-                  <li>Email：nsysu@mail.nsysu.edu.tw</li>
-                  <li>Service：Mon.-Fri. 9:00-17:00</li>
-                </ul>
-              </div>
-            <div class="col-lg-8 mb-4 ">
-                <div class="embed-responsive embed-responsive-4by3">
-              <!-- Embedded Google Map -->
-                <iframe 
-                    frameborder="0" 
-                    style="border:0" 
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDcqchIJvZ4wlhm2U0PWCak-8-wlY_Z7-0&q=國立中山大學" 
-                    allowfullscreen>
-                    </iframe>              
-                </div>
-            </div>
+         
             <p class="h4 my-3 col-12"> <span class="custom-hr mx-2 "></span>Send us a Message</p>
             
             <form name="sentMessage" id="contactForm" novalidate class=" col-lg-8 ">
