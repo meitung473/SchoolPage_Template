@@ -45,28 +45,30 @@
 <body>
  
   <!-- Navigation -->
-  <nav class="navbar   fixed-top navbar-expand-lg navbar-dark custom-navbar p-0 my-0">
+  <nav class="navbar  fixed-top navbar-expand-lg navbar-dark custom-navbar p-0 my-0">
     <div class="container my-0">
       <!-- LOGO -->
-      <a class="navbar-brand justify-content-center" href="#">
+      <a class="navbar-brand justify-content-center d-sm-flex" href="#">
         <img src="template/schoollogo.png" width="66%" height="35px" alt="">
       </a>
       <!-- hamburger -->
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler mx-0 px-2 border-0" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger line my-1"></span>
+        <span class="hamburger line my-1"></span>
+        <span class="hamburger line my-1"></span>
       </button>
       <!-- navbar 裡面的東西 -->
-      <div class="collapse navbar-collapse justify-content-center " id="navbarResponsive">
-        <ul class="navbar-nav ml-auto custom-ul align-self-end m-0 p-0"id="mytab"role="tablist">
-          <li class="nav-item dropdown">
+      <div class="collapse navbar-collapse justify-content-center px-4" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto custom-ul align-self-end"id="mytab"role="tablist">
+          <li class="nav-item dropdown border-0">
             <a class="nav-link dropdown-toggle border-0 " href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
               <span>About</span>  
             </a>
-            <div class="dropdown-menu dropdown-menu-left border-0 " aria-labelledby="navbarDropdownPortfolio">
+            <div class="dropdown-menu dropdown-menu-left  shadow-lg  rounded" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="About/School_Information.html">School Information</a>
-              <div class="dropdown-divider"></div>
+  
               <a class="dropdown-item" href="About/Features.html">Features</a>
-              <div class="dropdown-divider"></div>
+            
               <a class="dropdown-item" href="About/History.html">History</a>
               
             </div>
@@ -77,9 +79,9 @@
             <a class="nav-link dropdown-toggle border-0" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
               Organization
             </a>
-            <div class="dropdown-menu dropdown-menu-left m-0 py-0 shadow-sm  bg-light rounded" aria-labelledby="navbarDropdownPages">
+            <div class="dropdown-menu dropdown-menu-left  shadow-lg  rounded" aria-labelledby="navbarDropdownPages">
               <a class="dropdown-item" href="Organization/Organization1.html">Organization1</a>
-              <div class="dropdown-divider"></div>
+             
               <a class="dropdown-item" href="Organization/Organization2.html">Organization2</a>
             </div>
           </li>

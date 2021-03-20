@@ -7,12 +7,14 @@ $(document).ready(function() {
     $('.navbar').addClass("shrink");
     $('.navbar-brand img').addClass("bransize");
     $('.navbar-collapse').addClass("collapse-shrink");
+    $('.hamburger').addClass("collapse-shrink");
     }
     else {
     $('#toTopBtn').fadeOut();
     $('.navbar').removeClass("shrink");
     $('.navbar-brand img').removeClass("bransize");
     $('.navbar-collapse').removeClass("collapse-shrink");
+    $('.hamburger').removeClass("collapse-shrink");
     }
     });
     

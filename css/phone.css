@@ -25,4 +25,8 @@
     {
         display: inline-flex;
     }
+  .nav-link.nav-contact::before
+    {
+      display: none;
+    }
 }
