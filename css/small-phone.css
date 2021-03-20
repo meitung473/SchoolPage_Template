@@ -25,6 +25,11 @@
         padding-top: 10%;
     } */
 
+.nav-item.dropdown .nav-link:hover::before
+{
+  display: none;
+}
+
 }
 @media (min-width:320px)  and (max-width: 575.98px) 
 {

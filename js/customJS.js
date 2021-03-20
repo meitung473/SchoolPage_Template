@@ -5,10 +5,14 @@ $(document).ready(function() {
     if ($(this).scrollTop() > 20) {
     $('#toTopBtn').fadeIn();
     $('.navbar').addClass("shrink");
+    $('.navbar-brand img').addClass("bransize");
+    $('.navbar-collapse').addClass("collapse-shrink");
     }
     else {
     $('#toTopBtn').fadeOut();
     $('.navbar').removeClass("shrink");
+    $('.navbar-brand img').removeClass("bransize");
+    $('.navbar-collapse').removeClass("collapse-shrink");
     }
     });
     
@@ -19,4 +23,4 @@ $(document).ready(function() {
     return false;
     });
 });
-var listitem = document.getElementById('About1');
+
