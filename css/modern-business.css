@@ -434,5 +434,9 @@ body
 {
   background-color: red;
 }
-
+#sendMessageButton
+{
+  color: #EAEBED;
+  background-color: #1B5299;
+}
 
