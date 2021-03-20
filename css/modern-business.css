@@ -321,11 +321,13 @@ body
 }
 .custom-list-title:focus
 {
+  transition: 0.2s;
   color: #EAEBED;
   background-color: #1B5299;
 }
 .list-group-item-action:hover
 { 
+  transition: 0.2s;
   color:#EAEBED;
   
   background-color: #009FB7;
@@ -385,11 +387,6 @@ body
   vertical-align:middle;
   font-size: small;
 }
-.canlendar-ul
-{
-  
- 
-}
 .canlendar-li
 {
   
@@ -445,4 +442,31 @@ body
 {
   background: #EAEBED;
 
+}
+/* 旁邊的選單 */
+.custom-list-title.active
+{
+  background-color: #1B5299;
+}
+.select.disabled
+{
+  
+  font-weight: bold;
+  color: #EAEBED;
+  background-color: #CF5C36;
+  opacity: 0.8;
+}
+.other i
+{
+  display:none;
+}
+.other:hover
+{
+  
+  font-weight: bold;
+}
+.other:hover i
+{
+  display:inline;
+  font-size: large;
 }
